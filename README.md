@@ -1,2 +1,20 @@
-# Tutorials1.3prog
- 
+# Tutorials 1-2
+
+This project includes two key scripts for animating a player and handling basic movement. Below are the details on how to integrate and use the provided scripts.
+
+## Files
+
+1. **AnimatePlayer.cs**  
+   [Link to AnimatePlayer.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/AnimatePlayer.cs)  
+   This script is responsible for animating the player. It should be attached to your player object and will control the animation states based on the player's movement.
+
+2. **MoveBasic.cs**  
+   [Link to MoveBasic.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/MoveBasic.cs)  
+   This script handles the basic movement controls for the player. It uses Unity's Input system to allow the player to move in a 2D or 3D environment.
+
+## GIF Demonstration
+
+To help visualize the behavior of these scripts, here is a GIF showing how the player moves and animates:
+
+![Player Movement & Animation](Gifs/ezgif-5ae935d205e1f7.gif)
+
