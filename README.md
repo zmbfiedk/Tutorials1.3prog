@@ -48,4 +48,30 @@ This project introduces the functionality to collect pickups and track the playe
 
 ![Player Collecting Pickup](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Gifs/ezgif-6b1aef1a2627ab.gif)
 
+# Tutorial 5
+
+This project introduces the functionality for shooting, killing on hit, and managing bullet movement. Below are the details on how to integrate and use the provided scripts.
+
+## Files
+
+1. **Kill on hit.cs**  
+   [Link to Kill on hit.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Kill%20on%20hit.cs)  
+   This script is responsible for detecting when the player or enemy is hit by a bullet, and it handles the logic for killing the affected object.
+
+2. **Shoot.cs**  
+   [Link to Shoot.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Shoot.cs)  
+   This script controls the player's shooting mechanics, enabling the firing of bullets when the shoot input is triggered.
+
+3. **MoveBullet.cs**  
+   [Link to MoveBullet.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/MoveBullet.cs)  
+   This script is responsible for the movement of the bullets, allowing them to travel across the screen after being fired.
+
+4. **GetPickup.cs (Updated)**  
+   [Link to GetPickup.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/GetPickup.cs)  
+   This updated script handles the pickup collection logic and also integrates with the player's score, which increases as pickups are gathered.
+
+## GIF Demonstration
+
+![Player Shooting & Bullet Movement](Gifs/ezgif-8b9fcb279a4774.gif)
+
 
