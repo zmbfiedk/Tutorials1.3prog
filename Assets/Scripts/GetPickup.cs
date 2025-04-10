@@ -2,45 +2,26 @@ using UnityEngine;
 
 public class GetPickup : MonoBehaviour
 {
-    private Renderer r;           
-    private AudioSource source;     
-    private ParticleSystem ps;      
-    private KeepScore scoreScript; 
+    private Renderer r; 
+    private AudioSource source;  
+    private ParticleSystem ps;  
     void Start()
     {
-        r = GetComponent<Renderer>();
-        source = GetComponent<AudioSource>();
-        ps = GetComponent<ParticleSystem>();
-
-        if (ps != null)
-        {
-            ps.Stop();
-        }
-
-        scoreScript = FindObjectOfType<KeepScore>();
+        r = GetComponent<Renderer>();  
+        source = GetComponent<AudioSource>(); 
+        ps = GetComponent<ParticleSystem>(); 
+        ps.Stop();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("Pickup hit by player!");
+            r.enabled = false;  
+            source.Play();  
+            ps.Play();  
 
-            r.enabled = false;
-            if (source != null)
-            {
-                source.Play();
-            }
-
-            if (ps != null)
-            {
-                ps.Play();
-            }
-            if (scoreScript != null)
-            {
-                scoreScript.AddScore(5);
-            }
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 0.5f);  
         }
     }
 }
