@@ -14,7 +14,19 @@ This project includes two key scripts for animating a player and handling basic 
 
 ## GIF Demonstration
 
-To help visualize the behavior of these scripts, here is a GIF showing how the player moves and animates:
-
 ![Player Movement & Animation](Gifs/ezgif-5ae935d205e1f7.gif)
+
+# Tutorial 3
+
+This project introduces a jump mechanic for the player. Below are the details on how to integrate and use the provided script.
+
+## Files
+
+1. **Jump.cs**  
+   [Link to Jump.cs Script](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Jump.cs)  
+   This script handles the player's jumping functionality. It should be attached to your player object and allows the player to jump when the jump input is triggered.
+
+## GIF Demonstration
+
+![Player Jumping](Gifs/ezgif-1f84b338ccf2df.gif)
 
