@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class KillOnHit : MonoBehaviour
 {
-    public string targetTag;    
-    public GameObject effect; 
-    private AudioSource audioSource; 
+    public string targetTag;
+    public GameObject effect;
+    private AudioSource audioSource;
+    private Hearts heartsScript;
 
     void Start()
     {
@@ -13,26 +14,45 @@ public class KillOnHit : MonoBehaviour
 
     private void OnCollisionEnter(Collision coll)
     {
-        CheckCollision(coll.gameObject);
+        handleHit(coll.gameObject);
     }
 
     private void OnTriggerEnter(Collider coll)
     {
-        CheckCollision(coll.gameObject);
+        handleHit(coll.gameObject);
     }
 
-    private void CheckCollision(GameObject collidedObject)
+    private void handleHit(GameObject other)
     {
-        if (collidedObject.CompareTag(targetTag))
+        if (other.CompareTag(targetTag))
         {
-            GameObject expl = Instantiate(effect, transform.position, Quaternion.identity);
-            Destroy(expl, 2f); 
+            GameObject expl = Instantiate(effect, other.transform.position, Quaternion.identity);
+            Destroy(expl, 2f);
 
-            Destroy(collidedObject, 0.1f);  
+            if (targetTag == "Player")
+            {
+                if (heartsScript == null)
+                {
+                    heartsScript = FindObjectOfType<Hearts>();
+                }
+
+                heartsScript.Lives--;
+
+                if (heartsScript.Lives == 0)
+                {
+                    Destroy(other, 0.1f);
+                }
+            }
+            else
+            {
+                Destroy(other, 0.1f);
+            }
+
             if (audioSource != null)
             {
                 audioSource.Play();
             }
+
             Destroy(gameObject, 0.1f);
         }
     }
