@@ -74,4 +74,34 @@ This project introduces the functionality for shooting, killing on hit, and mana
 
 ![Player Shooting & Bullet Movement](Gifs/ezgif-8b9fcb279a4774.gif)
 
+# Tutorial 6
+
+In Tutorial 6, we added several key scripts to enhance the game's functionality. Below are the details on each new script, along with updates to existing code:
+
+## New Scripts
+
+1. **[EnemyShoot.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/EnemyShoot.cs)**  
+   This script is responsible for handling the shooting mechanics for enemies. It controls when and how enemies shoot at the player, including the bullet direction and timing.
+
+2. **[CameraFollow.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/CameraFollow.cs)**  
+   This script ensures the camera follows the player smoothly during movement, keeping the player in view as they navigate through the game environment.
+
+3. **[Heart.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Heart.cs)**  
+   This script manages the heart-based life system, tracking the player's health and updating the visual representation of health hearts as the player takes damage or collects health.
+
+4. **[Triggeranimation.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Triggeranimation.cs)**  
+   This script triggers specific animations based on various in-game events. It's responsible for ensuring that character animations are synchronized with the game state.
+
+## Updated Code
+
+1. **[Kill on hit.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Kill%20on%20hit.cs)**  
+   This script was updated to handle interactions where an enemy or object is destroyed upon collision with a bullet or another object.
+
+2. **[Shoot.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Shoot.cs)**  
+   This script was updated to improve player shooting mechanics, including bullet trajectory, firing rate, and the interaction with the player's weapon.
+
+## GIF Demonstration
+
+![Tutorial 6 Update GIF](Gifs/ezgif-345e99bfcd83ea%20(1).gif)
+
 
