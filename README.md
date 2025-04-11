@@ -105,3 +105,20 @@ In Tutorial 6, we added several key scripts to enhance the game's functionality.
 ![Tutorial 6 Update GIF](Gifs/ezgif-345e99bfcd83ea%20(1).gif)
 
 
+# Tutorial 7-8 - New Scripts and Code Updates
+
+In Tutorials 7 and 8, we added and modified key scripts to introduce jumping mechanics and trap triggers. Below are the details on the new and updated scripts:
+
+## New Scripts
+
+1. **[Jump.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/Jump.cs)**  
+   This script handles the player's jump mechanics, allowing the player to jump when certain conditions are met, such as pressing a jump button or colliding with a surface.
+
+2. **[TrapTrigger.cs](https://github.com/zmbfiedk/Tutorials1.3prog/blob/main/Assets/Scripts/TrapTrigger.cs)**  
+   This script manages the activation of traps when the player enters a specific trigger area. It can trigger various traps like spikes, falling objects, or other environmental hazards.
+
+## GIF Demonstration
+
+![Tutorial 7-8 Update GIF](Gifs/ezgif-85f6669a5d4728.gif)
+
+
